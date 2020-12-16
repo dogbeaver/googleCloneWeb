@@ -1,0 +1,93 @@
+Reference : https://www.youtube.com/watch?v=RGOj5yH7evk
+
+Terms
+
+- Directory --> Folder
+- Terminal or Command Line --> Interface for Text Commands
+- CLI --> Command Line Interface
+- cd --> Change Directory
+- Repository --> Project, or the folder/place where your project is kept
+- Github --> A website to host your repositories online
+
+Git Commands
+- Clone --> Bring a repository that is hosted somewhere like Github into a folder on your local machine
+add --> Track your files and changes in Git
+commit --> Save your files in Git
+push --> Upload Git commits to a remote repo, like Github
+pull --> Download hcanges from remote repo to your local machine, the opposite of push
+
+
+
+
+<<< Terminal >>>
+
+git --version
+==> to see what version git has been downloaded on my computer
+
+git clone git@github.com:dogbeaver/python_prac1.git
+==> SSH address, you will see the folder, my repo from github that's pulled down into directory that I am in.
+
+cd demo 
+==> you can put the folder name on (demo) to move inside of the folder quickly to change the directory into the folder.
+
+* demo-repo git:(master) la 
+==> ls -la (list everything in the directory including hidden files and folders / if you have mac, use ls -la)
+==> then you will see the README file and something.git (and git will be blue color which means it's actually a folder
+and this hidden git folder, actually stores all of the files that save your commits or codes of the times. It saves
+all the history of repo.)
+
+
+git status
+-->  it shows everything.
+
+but if i made another file with names <index.html>
+then do 
+git status 
+--> it will appear as "Untracked files"
+which means it does not recognize the "index.html" file yet.
+So be able to recognize it, 
+you have to add the file to the git.
+
+git add .
+==> and tell that which files to track. 
+or
+
+git add index.html
+
+
+git commit -m "a"
+--> m is message, and you need to have a message in order to commit your files.
+message could be one character, or so, but you need a message. 
+and ideally, should have something to do with what and why behind the commit you are making.
+
+
+git commit -m "Added index.html" -m "some description"
+==> you will see 
+__ files changes, __ insertions(+)
+
+but we still have saved it to locally, not in github yet.
+
+git push 
+--> be able to push your file to github, you have to prove that you are the owner of the hub.
+
+ssh-keygen -t rsa -b 4096 -C "email@example.com"
+
+
+ls
+--> you will see
+testkey
+testkey.pub
+==> pub means public, it means it's okay to other people to see this key
+
+cat testkey.pub
+--> start with "ssh-rsa ~ email@example.com"
+
+
+***then ive got lost. 
+
+
+
+
+
+
+
